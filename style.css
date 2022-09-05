@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: none;
+}
+
+/* barre de navigation */
+
+nav {
+  display: flex;
+  flex-wrap: wrap; /* empilé la liste */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  font-size: 25 px;
+  text-size-adjust: 20px;
+}
+
+nav h1 img {
+  width: 30%;
+  margin-top: -35px;
+  margin-left: -30px;
+}
+
+nav .onglets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav .onglets p {
+  font-size: 18px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+nav .onglets input {
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 50px;
+  max-width: 500px;
+  text-align: center;
+}
+
+header button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* fin de la barre de navigation*/
+
+/* debut section principale */
+
+.main {
+  margin: 20px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* les produits */
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.produits .produit {
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+/*redimentioner l'image */
+
+.produits .produit img {
+  width: 335px;
+}
+
+/* fin des produits*/
+.produits .produit .produit-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produits .produit .corp-produit {
+  margin-top: -10px;
+}
+
+/* video de présentation */
+
+body .video {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+body .video iframe {
+  border: none;
+  border-radius: 15px;
+  width: 95%;
+  height: 420px;
+  margin-bottom: 70px;
+}
+/* fin de la vidéo de présentation */
+
+/* style le footer*/
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+footer .socialmedia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .socialmedia i {
+  margin-right: 15px;
+  margin-top: 30px;
+  color: white;
+}
+
+/* fin style footer*/
+
+/* format mobile */
+
+@media screen and (max-width: 570px) {
+  nav .onglets .link {
+    display: none;
+  }
+  .produits .produit img {
+    width: 300px;
+  }
+}
